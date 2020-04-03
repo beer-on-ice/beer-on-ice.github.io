@@ -23,28 +23,32 @@
     var CONFIG = {"hostname":"www.v2ex.tech","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="孤独的键">
-<meta property="og:url" content="https://www.v2ex.tech/index.html">
+  <meta name="description" content="1.下载okteto和kubectlokteto下载地址：https:&#x2F;&#x2F;downloads.okteto.com&#x2F;cli&#x2F;okteto.exe kubectl下载地址：https:&#x2F;&#x2F;storage.googleapis.com&#x2F;kubernetes-release&#x2F;release&#x2F;v1.18.0&#x2F;bin&#x2F;windows&#x2F;amd64&#x2F;kubectl.exe 2.okteto cli登录12okt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="okteto免费容器安装宝塔面板教程">
+<meta property="og:url" content="https://www.v2ex.tech/2020/04/03/okteto%E5%85%8D%E8%B4%B9%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="孤独的键">
+<meta property="og:description" content="1.下载okteto和kubectlokteto下载地址：https:&#x2F;&#x2F;downloads.okteto.com&#x2F;cli&#x2F;okteto.exe kubectl下载地址：https:&#x2F;&#x2F;storage.googleapis.com&#x2F;kubernetes-release&#x2F;release&#x2F;v1.18.0&#x2F;bin&#x2F;windows&#x2F;amd64&#x2F;kubectl.exe 2.okteto cli登录12okt">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-03T07:59:08.000Z">
+<meta property="article:modified_time" content="2020-04-03T08:08:58.350Z">
 <meta property="article:author" content="雾山">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://www.v2ex.tech/">
+<link rel="canonical" href="https://www.v2ex.tech/2020/04/03/okteto%E5%85%8D%E8%B4%B9%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E6%95%99%E7%A8%8B/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>孤独的键</title>
+  <title>okteto免费容器安装宝塔面板教程 | 孤独的键</title>
   
 
 
@@ -149,11 +153,11 @@
         <div class="content-wrap">
           
 
-          <div class="content index">
+          <div class="content post">
             
 
   <div class="posts-expand">
-        
+      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -169,10 +173,9 @@
       <meta itemprop="name" content="孤独的键">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/03/okteto%E5%85%8D%E8%B4%B9%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">okteto免费容器安装宝塔面板教程</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          okteto免费容器安装宝塔面板教程
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -185,7 +188,14 @@
               <time title="创建时间：2020-04-03 15:59:08 / 修改时间：16:08:58" itemprop="dateCreated datePublished" datetime="2020-04-03T15:59:08+08:00">2020-04-03</time>
             </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
@@ -210,7 +220,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="1-下载okteto和kubectl"><a href="#1-下载okteto和kubectl" class="headerlink" title="1.下载okteto和kubectl"></a>1.下载okteto和kubectl</h1><p>okteto下载地址：<a href="https://downloads.okteto.com/cli/okteto.exe" target="_blank" rel="noopener">https://downloads.okteto.com/cli/okteto.exe</a></p>
+        <h1 id="1-下载okteto和kubectl"><a href="#1-下载okteto和kubectl" class="headerlink" title="1.下载okteto和kubectl"></a>1.下载okteto和kubectl</h1><p>okteto下载地址：<a href="https://downloads.okteto.com/cli/okteto.exe" target="_blank" rel="noopener">https://downloads.okteto.com/cli/okteto.exe</a></p>
 <p>kubectl下载地址：<a href="https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/windows/amd64/kubectl.exe" target="_blank" rel="noopener">https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/windows/amd64/kubectl.exe</a></p>
 <h2 id="2-okteto-cli登录"><a href="#2-okteto-cli登录" class="headerlink" title="2.okteto cli登录"></a>2.okteto cli登录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">okteto login</span><br><span class="line">okteto namespace</span><br></pre></td></tr></table></figure>
 
@@ -225,208 +235,61 @@
 <h2 id="5-等待完成"><a href="#5-等待完成" class="headerlink" title="5.等待完成"></a>5.等待完成</h2><p>登录地址：自动生成  用户名：username   密码  password</p>
 <h2 id="ps"><a href="#ps" class="headerlink" title="ps:"></a>ps:</h2><p>  可能会报什么error之类的，我重复输入几次命令，他就成功了，具体为啥我也不太懂，教程是此帖大佬发的，特此感谢<br>  <a href="https://www.hostloc.com/forum.php?mod=viewthread&amp;tid=667527&amp;highlight=okteto" target="_blank" rel="noopener">https://www.hostloc.com/forum.php?mod=viewthread&amp;tid=667527&amp;highlight=okteto</a></p>
 
-      
     </div>
 
     
     
     
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>雾山
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.v2ex.tech/2020/04/03/okteto%E5%85%8D%E8%B4%B9%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E6%95%99%E7%A8%8B/" title="okteto免费容器安装宝塔面板教程">https://www.v2ex.tech/2020/04/03/okteto免费容器安装宝塔面板教程/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
 
-
-
-<!--文章结束标语-->
+        
 
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.v2ex.tech/2020/03/26/euserv%E5%85%8D%E8%B4%B9Vps%E5%AE%89%E8%A3%85ServerStatus/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="雾山">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤独的键">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/26/euserv%E5%85%8D%E8%B4%B9Vps%E5%AE%89%E8%A3%85ServerStatus/" class="post-title-link" itemprop="url">euserv免费Vps安装ServerStatus</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-26 16:35:00 / 修改时间：17:16:38" itemprop="dateCreated datePublished" datetime="2020-03-26T16:35:00+08:00">2020-03-26</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>952</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Euserv-的免费-IPV6-Only-Vps-安装-ServerStatus"><a href="#Euserv-的免费-IPV6-Only-Vps-安装-ServerStatus" class="headerlink" title="Euserv 的免费 IPV6 Only Vps 安装 ServerStatus"></a>Euserv 的免费 IPV6 Only Vps 安装 ServerStatus</h1><h2 id="1-安装-serverStatus-服务端"><a href="#1-安装-serverStatus-服务端" class="headerlink" title="1. 安装 serverStatus 服务端"></a>1. 安装 serverStatus 服务端</h2><p>我是在阿里云国际免费试用的小鸡(该小鸡是 ipv4 小鸡，我使用了 tunnelbroker 做了隧道，支持了 ipv6，可自行搜索教程)上安装了 ServerStatus 服务端，并添加好了节点</p>
-<p>tip: 在配置隧道时，可参考截图部分</p>
-<p><img src="https://i.loli.net/2020/03/26/imJ8621LfDRoOwX.png" alt="https://i.loli.net/2020/03/26/imJ8621LfDRoOwX.png"></p>
-<h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh &amp;&amp; chmod +x status.sh</span><br></pre></td></tr></table></figure>
-
-<h4 id="运行："><a href="#运行：" class="headerlink" title="运行："></a>运行：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh status.sh s</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-euserv-安装客户端"><a href="#2-euserv-安装客户端" class="headerlink" title="2. euserv 安装客户端"></a>2. euserv 安装客户端</h2><h4 id="安装：-1"><a href="#安装：-1" class="headerlink" title="安装："></a>安装：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/status.sh &amp;&amp; chmod +x status.sh</span><br></pre></td></tr></table></figure>
-
-<h4 id="运行：-1"><a href="#运行：-1" class="headerlink" title="运行："></a>运行：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh status.sh c</span><br></pre></td></tr></table></figure>
-
-<p>目前节点可以随便写，因为待会儿会删除配置文件</p>
-<h2 id="3-修改配置文件"><a href="#3-修改配置文件" class="headerlink" title="3.修改配置文件"></a>3.修改配置文件</h2><h3 id="方法一（本人使用）："><a href="#方法一（本人使用）：" class="headerlink" title="方法一（本人使用）："></a>方法一（本人使用）：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rm -f /usr/<span class="built_in">local</span>/ServerStatus/client/status-client.py</span><br><span class="line"></span><br><span class="line">wget -O /usr/<span class="built_in">local</span>/ServerStatus/client/status-client.py https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master/clients/status-client_ipv6.py</span><br></pre></td></tr></table></figure>
-
-<h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>打开/usr/local/ServerStatus/client/status-client.py 文件，然后把建立 socket 连接那一行的<br>s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)改成 s = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)</p>
-<h3 id="重新配置节点"><a href="#重新配置节点" class="headerlink" title="重新配置节点"></a>重新配置节点</h3><p>节点配置为在服务端填写的信息，注意，此时的 ip 要写为服务端的 ipv6 地址，即使用 tunnelbroker 隧道后他们提供的 ipv6 地址（后面/64 不需要）</p>
-<p><img src="https://i.loli.net/2020/03/26/aeD5HjRhBG7EuwZ.png" alt="79c9e25ba93ec818306d4b916530a39.png"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash status.sh c</span><br></pre></td></tr></table></figure>
-
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/26/euserv%E5%85%8D%E8%B4%B9Vps%E5%AE%89%E8%A3%85ServerStatus/" rel="prev" title="euserv免费Vps安装ServerStatus">
+      <i class="fa fa-chevron-left"></i> euserv免费Vps安装ServerStatus
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
 
 
 
 <!--文章结束标语-->
 
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.v2ex.tech/2020/03/26/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="雾山">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孤独的键">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/26/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-03-26 16:22:11" itemprop="dateCreated datePublished" datetime="2020-03-26T16:22:11+08:00">2020-03-26</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>357</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-
-
-
-<!--文章结束标语-->
+<div style="text-align:center;color: #ccc;font-size:14px;">
+------------- 本文结束 <i class="fa fa-heart-o"></i> 感谢您的阅读-------------
+</div>
 
 
   </div>
 
-  
-
-
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -473,6 +336,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-下载okteto和kubectl"><span class="nav-number">1.</span> <span class="nav-text">1.下载okteto和kubectl</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-okteto-cli登录"><span class="nav-number">1.1.</span> <span class="nav-text">2.okteto cli登录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我输入时全部使用的绝对路径，所以实际输入cmd的代码如下，你可以找到自己下载的okteto-exe位置，直接拖进去即可"><span class="nav-number">1.1.1.</span> <span class="nav-text">我输入时全部使用的绝对路径，所以实际输入cmd的代码如下，你可以找到自己下载的okteto.exe位置，直接拖进去即可</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-新建bt-yml"><span class="nav-number">1.2.</span> <span class="nav-text">3. 新建bt.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-提交"><span class="nav-number">1.3.</span> <span class="nav-text">4. 提交</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我输入时全部使用的绝对路径，所以实际输入cmd的代码如下，你可以找到自己下载的kubectl-exe位置，直接拖进去即可"><span class="nav-number">1.3.1.</span> <span class="nav-text">我输入时全部使用的绝对路径，所以实际输入cmd的代码如下，你可以找到自己下载的kubectl.exe位置，直接拖进去即可</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-等待完成"><span class="nav-number">1.4.</span> <span class="nav-text">5.等待完成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ps"><span class="nav-number">1.5.</span> <span class="nav-text">ps:</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -624,6 +488,25 @@
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'ae027a2fc90386909b96',
+      clientSecret: 'e7ae8bb1a18f023c52a63c967378ecac44cc8558',
+      repo        : 'beer-on-ice.github.io',
+      owner       : 'beer-on-ice',
+      admin       : ['beer-on-ice'],
+      id          : 'b6053339ecd6aa16efa3b9a5c5566859',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 
   <!-- 页面点击小红心 -->
