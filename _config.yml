@@ -28,7 +28,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: 'about/*'
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -105,8 +105,6 @@ deploy:
   type: git
   repo: https://github.com/beer-on-ice/beer-on-ice.github.io.git
   branch: main
-
-skip_render: "about/*"
 
 # judgement
 # twikoo:
