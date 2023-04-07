@@ -106,6 +106,8 @@ deploy:
   repo: https://github.com/beer-on-ice/beer-on-ice.github.io.git
   branch: main
 
+skip_render: "about/*"
+
 # judgement
 # twikoo:
 #   enable: true
