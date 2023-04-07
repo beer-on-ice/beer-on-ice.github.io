@@ -27,8 +27,8 @@
 <meta property="og:description" content="这是后台地址： https:&#x2F;&#x2F;git-blog-back.666986.xyz">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/beer-on-ice/blog_img@main/1680852857000.png">
-<meta property="article:published_time" content="2023-04-07T07:38:51.681Z">
-<meta property="article:modified_time" content="2023-04-07T07:38:51.681Z">
+<meta property="article:published_time" content="2023-04-07T07:42:46.347Z">
+<meta property="article:modified_time" content="2023-04-07T07:42:46.347Z">
 <meta property="article:author" content="mistyhill">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/beer-on-ice/blog_img@main/1680852857000.png">
@@ -176,9 +176,17 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2023-04-07 07:38:51" itemprop="dateCreated datePublished" datetime="2023-04-07T07:38:51+00:00">2023-04-07</time>
+      <time title="Created: 2023-04-07 07:42:46" itemprop="dateCreated datePublished" datetime="2023-04-07T07:42:46+00:00">2023-04-07</time>
     </span>
 
+  
+    <span id="/2023/04/07/%E5%85%A8%E6%89%98%E7%AE%A1%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" class="post-meta-item twikoo_visitors" data-flag-title="测试文章" title="Views">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="twikoo_visitors"></span>
+    </span>
   
 </div>
 
@@ -210,6 +218,7 @@
 
 
 
+    <div class="comments"><div id="twikoo-comments"></div></div>
 </div>
   </main>
 
@@ -262,6 +271,27 @@
 
 
 
+<script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":true,"envId":"https://twikoo.mistyhill.ml","el":"#twikoo-comments"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.twikoo.el)
+    .then(() => NexT.utils.getScript(
+      CONFIG.twikoo.jsUrl || 'https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js',
+      { condition: window.twikoo }
+    ))
+    .then(() => {
+      twikoo.init(CONFIG.twikoo);
+    });
+});
+</script>
+<style>
+.post-block, .comments {
+  overflow: visible;
+}
+.tk-owo-emotion {
+  display: inline-block;
+}
+</style>
 
 </body>
 </html>
