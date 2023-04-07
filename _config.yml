@@ -105,3 +105,9 @@ deploy:
   type: git
   repo: https://github.com/beer-on-ice/beer-on-ice.github.io.git
   branch: main
+
+# judgement
+twikoo:
+  enable: true
+  visitor: true
+  envId: https://twikoo.mistyhill.ml
