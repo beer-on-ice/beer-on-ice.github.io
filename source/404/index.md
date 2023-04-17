@@ -1,3 +1,10 @@
+---
+title: '404'
+permalink: /404
+comments: false
+layout: false
+---
+
 <!doctype html>
 <html>
 <meta charset="utf-8">
