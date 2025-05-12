@@ -54,7 +54,7 @@ utterances: ## See: https://utteranc.es
 twikoo:
   enable: true
   visitor: true
-  envId: https://twikoo.sob.im
+  envId: https://twikoo.666986.xyz
 
 google_search: true ## Use Google search, true/false.
 baidu_search: false ## Use Baidu search, true/false.
@@ -122,11 +122,11 @@ widgets: ## Seven widgets in sidebar provided: search, info, category, tag, rece
   - links
 
 info:
-  avatar: https://imgs.sob.im/file/b67308bed3e2bec5a5ba8.png
+  avatar: https://imgs.666986.xyz/file/b67308bed3e2bec5a5ba8.png
   discription: 人不能同时拥有青春和青春的感悟.
   outlinkitem:
     - name: twitter
-      outlink: https://tg.sob.im/#856146798
+      outlink: https://tg.666986.xyz/#856146798
       message: Twitter
     - name: envelope
       outlink: mailto:ssh@ik.me
@@ -140,15 +140,15 @@ info:
 
 links:
   - title: 导航
-    url: https://nav.sob.im/
+    url: https://nav.666986.xyz/
     src: https://www.example1.com/favicon.ico
     desc: 导航
   - title: Bio页
-    url: http://bio.sob.im/
+    url: http://bio.666986.xyz/
     src: https://www.example1.com/favicon.ico
     desc: Bio页
   - title: 关于我
-    url: https://coder.sob.im/
+    url: https://coder.666986.xyz/
     src: https://www.example3.com/favicon.ico
     desc: 关于我
 
